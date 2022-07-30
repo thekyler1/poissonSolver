@@ -1,29 +1,29 @@
 clear all;
 
-aa = numSimPoisson;
-aa.setSimParameters(-0.1, 90);
-aa.newLayer;
-aa.layerProp(3e-6,1e16,'n','mct',0.3);
-aa.endLayer;
+mySim = numSimPoisson;
+mySim.setSimParameters(-0.1, 90);
+mySim.newLayer;
+mySim.layerProp(3e-6,1e16,'n','mct',0.3);
+mySim.endLayer;
 
-% aa.newLayer;
-% aa.layerProp(0.5e-6,1e18,'n','mct',0.35);
-% aa.endLayer; 
+% mySim.newLayer;
+% mySim.layerProp(0.5e-6,1e18,'n','mct',0.35);
+% mySim.endLayer; 
 
-aa.newLayer;
-aa.layerProp(1e-6,2e17,'p','mct',0.5);
-aa.endLayer;
+mySim.newLayer;
+mySim.layerProp(1e-6,2e17,'p','mct',0.5);
+mySim.endLayer;
 
-aa.deriveScaling;
-aa.initConditions;
+mySim.deriveScaling;
+mySim.initConditions;
 
 
 %%
 
-aa.nonBiasSim(1000);
-aa.biasClosing(1000);
-aa.chargesDerivative;
-aa.findTotCurrent;
+mySim.nonBiasSim(1000);
+mySim.biasClosing(1000);
+mySim.chargesDerivative;
+mySim.findTotCurrent;
 
-aa.totCurrent
+mySim.totCurrent
 
