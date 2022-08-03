@@ -1,2 +1,4 @@
 # poissonSolver
-1D 2nd order nonlinear equation solver for pn-junction
+
+Numerical solution for second order nonlinear differential equation (Poisson)
+1D pn-junction solver
