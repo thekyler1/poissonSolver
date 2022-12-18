@@ -4,10 +4,10 @@ classdef makeLayer < handle
     properties
         Temp = 300;
         layerLength = 1e-6;
-        dopingDensity = 0;
+        dopingDensity = 1e16;
         dopingType = 'n';
         materialType = 'mct';
-        materialComp = 0.0 ;
+        materialComp = 0.3 ;
         IDofLayer = 0;
         permittivity = 0;
         intrinsic = 0;
