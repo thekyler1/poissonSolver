@@ -10,14 +10,14 @@ Solver expects 2 layers to be defined before start:
 
 2. First initilize a layer with **newLayer()**
 
-3. Change layer property with *layerProp(args:
+3. Change layer property with *layerProp(args:*
 
-                              layerLength = 1e-6,
+                              *layerLength = 1e-6,*
 
-                              dopingDensity = 1e16,
+                              *dopingDensity = 1e16,*
 
-                              dopingType = 'n',
+                              *dopingType = 'n',*
 
-                              materialType = 'mct',
+                              *materialType = 'mct',*
 
-                              materialComp = '0.3')*
+                              *materialComp = '0.3')*
