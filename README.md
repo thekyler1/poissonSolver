@@ -8,16 +8,24 @@ Solver expects 2 layers to be defined before start:
 
 *setSimParameters(bias=0.0, temp=100);*
 
-2. First initilize a layer with **newLayer()**
+2. Initilize a layer with *newLayer()*
 
-3. Change layer property with *layerProp(args:*
+3. Change layer property with:
 
-                              *layerLength = 1e-6,*
+                              layerProp(args:
 
-                              *dopingDensity = 1e16,*
+                              layerLength = 1e-6,
 
-                              *dopingType = 'n',*
+                              dopingDensity = 1e16,
 
-                              *materialType = 'mct',*
+                              dopingType = 'n',
 
-                              *materialComp = '0.3')*
+                              materialType = 'mct',
+
+                              materialComp = '0.3')
+
+4. Finalize the current layer with *endLayer()* and repeat 2-4 for another layer.
+
+5. Start simulation using *startSim(maxIter=200)*
+
+
