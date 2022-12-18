@@ -2,6 +2,12 @@
 
 Numerical solution for second order nonlinear differential equation (Poisson) 
 
-1D pn-junction solver
+Solver expects 2 layers to be defined before start:
 
-Will be updated soon!
+First initilize a layer with ***newLayer()***
+Change layer property with *layerProp(args:
+                              layerLength = 1e-6,
+                              dopingDensity = 1e16,
+                              dopingType = 'n',
+                              materialType = 'mct',
+                              materialComp = '0.3')*
